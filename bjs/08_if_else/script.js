@@ -23,6 +23,11 @@ function stringValue (){
 document.querySelector('#start').addEventListener('click', function(){
     minValue = Number(document.querySelector('#minVal').value);
     maxValue = Number(document.querySelector('#maxVal').value);
+    if (minValue > maxValue) {
+        let a = maxValue;
+        maxValue = minValue;
+        minValue = a;
+    }
     if (minValue === '' || isNaN(minValue)){
                 minValue = 0;
             }
