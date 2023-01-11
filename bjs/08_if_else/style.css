@@ -1,0 +1,23 @@
+body{
+    align-content: center;
+}
+
+.offcanvas{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+
+.input-group{
+    clear: both;
+    text-align: center;
+    line-height:25px;
+    margin: 50px auto 10px auto;
+    width: 600px;
+}
+
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
