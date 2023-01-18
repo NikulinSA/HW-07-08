@@ -1,0 +1,9 @@
+body{
+    align-content: center;
+    background-color: rgb(254, 225, 170);
+}
+
+div{
+    margin: 100px 100px 50px 100px;
+    text-transform: uppercase;
+}
