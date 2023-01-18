@@ -1,9 +1,10 @@
 body{
     align-content: center;
+    background-color: rgb(230, 250, 255);
 }
 
 .game-card {
-    height: 100vh;
+    height: 80vh;
     font-family: 'Open Sans', monospace;
 }
 
