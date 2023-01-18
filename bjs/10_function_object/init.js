@@ -6,6 +6,7 @@ function generate() {
     // проверка пола
     if (document.querySelector('#genderOutput').innerText == 'Женщина'){
         document.querySelector('#surnameOutput').innerText = initPerson.surName + 'а';
+        // изменение окончания отчества
         document.querySelector('#secondNameOutput').innerText = initPerson.secondName.substring(0, initPerson.secondName.length - 2) + 'на';
         document.querySelector('#profOutput').innerText = initPerson.professionFemaleJson;
     }else{
