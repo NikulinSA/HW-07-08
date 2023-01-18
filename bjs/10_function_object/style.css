@@ -1,0 +1,12 @@
+body{
+    align-content: center;
+}
+
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+.buttons{
+    text-align: center;
+}
