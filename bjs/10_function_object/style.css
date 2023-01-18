@@ -1,14 +1,21 @@
 body{
     align-content: center;
     background-color: rgb(230, 250, 255);
+    background-image: url(/bjs/10_function_object/image/back1.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 
 .game-card {
-    height: 80vh;
+    height: 100vh;
     font-family: 'Open Sans', monospace;
 }
 
 .buttons{
     text-align: center;
     margin-bottom: 20px;
+}
+
+.card-header{
+    background-color: rgb(151, 133, 255, 70%);
 }
