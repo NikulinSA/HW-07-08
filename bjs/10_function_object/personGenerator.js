@@ -111,20 +111,19 @@ const personGenerator = {
 
     // Дата
     randomDate: function(){
-        // var birthDay = new Date(this.randomIntNumber(1900,1999), this.randomIntNumber(), this.randomIntNumber());
         var birthDay = new Date(this.randomIntNumber(1950,2005), this.randomIntNumber(1,12), this.randomIntNumber(1,31));
-        return birthDay.toLocaleDateString();
+        return birthDay.toLocaleDateString('ru',{day: 'numeric', month: 'long', year: 'numeric'});
     },
 
 // рандомайзер
     randomIntNumber: (max = 1, min = 0) => Math.floor(Math.random() * (max - min + 1) + min),
-
+// рандомайзер
     randomValue: function (json) {
         const obj = JSON.parse(json);
         const prop = `id_${this.randomIntNumber(obj.count, 1)}`;  // this = personGenerator
         return obj.list[prop];
     },
-
+// генерация имени
     randomFirstName: function() {
         // genderVal == 1 ? this.GENDER_MALE : this.GENDER_FEMALE;
         if(this.person.gender == 'Мужчина'){
@@ -134,22 +133,23 @@ const personGenerator = {
             return this.randomValue(this.firstNameFemaleJson);
         }
     },
+    // генерация отчества
     randomSecondName: function() {
             return this.randomValue(this.secondNameMaleJson);
     },
-
+// генерация фамилии
      randomSurname: function() {
         return this.randomValue(this.surnameJson);
     },
-
+// генерация профессии для мужчин
     randomProfessionMale: function(){
         return this.randomValue(this.professionMaleJson)
     },
-
+// генерация профессии для женщин
     randomProfessionFemale: function(){
         return this.randomValue(this.professionFemaleJson)
     },
-
+// генерация персональной карты
     getPerson: function () {
         this.person = {};
         this.person.gender = this.randomGender();
@@ -161,7 +161,7 @@ const personGenerator = {
         this.person.professionFemaleJson = this.randomProfessionFemale();
         return this.person;
     },
-
+// кнопка очистки формы
     clearPerson: function () {
         this.person = {};
         this.person.gender = ' ';
@@ -174,5 +174,3 @@ const personGenerator = {
     },
 };
 
-// document.querySelector('#clear').addEventListener('click', function(){
-// })
