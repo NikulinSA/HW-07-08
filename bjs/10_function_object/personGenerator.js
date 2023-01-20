@@ -36,21 +36,21 @@ const personGenerator = {
         }
     }`,
 
-    secondNameMaleJson: `{
-        "count": 10,
-        "list": {     
-            "id_1": "Александрович",
-            "id_2": "Максимович",
-            "id_3": "Иванович",
-            "id_4": "Артемович",
-            "id_5": "Дмитриевич",
-            "id_6": "Никитович",
-            "id_7": "Михаилович",
-            "id_8": "Данилович",
-            "id_9": "Егорович",
-            "id_10": "Андреевич"
-        }
-    }`,
+    // secondNameMaleJson: `{
+    //     "count": 10,
+    //     "list": {     
+    //         "id_1": "Александрович",
+    //         "id_2": "Максимович",
+    //         "id_3": "Иванович",
+    //         "id_4": "Артемович",
+    //         "id_5": "Дмитриевич",
+    //         "id_6": "Никитович",
+    //         "id_7": "Михаилович",
+    //         "id_8": "Данилович",
+    //         "id_9": "Егорович",
+    //         "id_10": "Андреевич"
+    //     }
+    // }`,
 
     firstNameFemaleJson: `{
         "count": 10,
@@ -135,7 +135,7 @@ const personGenerator = {
     },
     // генерация отчества
     randomSecondName: function() {
-            return this.randomValue(this.secondNameMaleJson);
+            return this.randomValue(this.firstNameMaleJson);
     },
 // генерация фамилии
      randomSurname: function() {
