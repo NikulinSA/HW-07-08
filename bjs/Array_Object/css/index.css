@@ -22,7 +22,7 @@ button {
   margin-top: 10px;
   background-color: #008cba;
   border: none;
-  color: white;
+  color: rgb(5, 4, 4);
   font-size: 14px;
   font-family: 'Courier New', Courier, monospace;
   padding: 10px 16px;
@@ -43,7 +43,7 @@ input {
   white-space: normal;
   background: none;
   background-color: #b8ffba;
-  color: rgb(0, 0, 0);
+  color: rgb(3, 2, 2);
   max-width: 200px;
 }
 
