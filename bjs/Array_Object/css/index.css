@@ -43,7 +43,7 @@ input {
   white-space: normal;
   background: none;
   background-color: #b8ffba;
-  color: white;
+  color: rgb(0, 0, 0);
   max-width: 200px;
 }
 
